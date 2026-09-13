@@ -1,4 +1,4 @@
-name: calculator-ci
+name: calculator-ci-
 on:
     push:
         branches:
@@ -42,4 +42,5 @@ jobs:
               
             - name: push docker image
               run: docker push ${{ secrets.DOCKER_USERNAME }}/calculator-app:latest
+            
               
